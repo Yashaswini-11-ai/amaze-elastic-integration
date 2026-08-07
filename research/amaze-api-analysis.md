@@ -1,4 +1,3 @@
-
 # AMaze API Analysis
 
 ## Authentication
@@ -13,6 +12,6 @@
 
 ...
 
-## Response Fields
+## Fields Returned
 
 ...
