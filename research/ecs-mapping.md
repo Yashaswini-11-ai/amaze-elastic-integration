@@ -1,22 +1,29 @@
 # AMaze to ECS Mapping
 
-## Initial ECS Mapping
+## AMaze API to Elastic Common Schema (ECS)
 
 | AMaze Field | ECS Field | Type |
 |------------|------------|------|
-| event_id | event.id | keyword |
-| timestamp | @timestamp | date |
-| attacker_ip | source.ip | ip |
-| severity | event.severity | long |
+| id | event.id | keyword |
+| created_at | @timestamp | date |
+| src_ip | source.ip | ip |
+| dst_ip | destination.ip | ip |
 | protocol | network.protocol | keyword |
-| mitre_attack | threat.technique.id | keyword |
+| threat_score | event.severity | long |
+| ttp | threat.technique.id | keyword |
+| title | event.action | keyword |
+| status | event.outcome | keyword |
+
+## AMaze Specific Fields
+
+| AMaze Field | ECS Field | Type |
+|------------|------------|------|
 | decoy_name | host.name | keyword |
 | session_duration | event.duration | long |
 
 ## Additional Metadata
 
+```text
 observer.vendor = mirrormire
-
 observer.product = amaze
-
 event.kind = alert
