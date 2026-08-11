@@ -18,3 +18,22 @@
 
 - name: event.outcome
   type: keyword
+
+
+  - name: amaze.ticket_status
+  type: keyword
+
+- name: amaze.threat_score
+  type: long
+
+- name: amaze.ttp
+  type: keyword
+
+- name: amaze.title
+  type: keyword
+
+- name: amaze.src_ip
+  type: ip
+
+- name: amaze.dst_ip
+  type: ip
