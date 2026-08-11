@@ -1,0 +1,20 @@
+- name: event.id
+  type: keyword
+
+- name: source.ip
+  type: ip
+
+- name: destination.ip
+  type: ip
+
+- name: event.severity
+  type: long
+
+- name: threat.technique.id
+  type: keyword
+
+- name: event.action
+  type: keyword
+
+- name: event.outcome
+  type: keyword
