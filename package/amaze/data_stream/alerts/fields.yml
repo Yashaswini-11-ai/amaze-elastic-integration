@@ -7,6 +7,9 @@
 - name: destination.ip
   type: ip
 
+- name: network.protocol
+  type: keyword
+
 - name: event.severity
   type: long
 
@@ -19,8 +22,7 @@
 - name: event.outcome
   type: keyword
 
-
-  - name: amaze.ticket_status
+- name: amaze.ticket_status
   type: keyword
 
 - name: amaze.threat_score
