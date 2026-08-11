@@ -6,4 +6,19 @@ streams:
   - input: httpjson
     title: AMaze Alerts
     description: Collect AMaze alerts and ticket information
-``
+
+vars:
+  - name: base_url
+    type: text
+    title: AMaze Base URL
+    required: true
+
+  - name: api_key
+    type: password
+    title: AMaze API Key
+    required: true
+
+  - name: interval
+    type: text
+    title: Collection Interval
+    default: 5m
