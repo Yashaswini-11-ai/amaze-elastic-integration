@@ -1,0 +1,16 @@
+name: amaze
+title: MirrorMire AMaze
+
+version: "0.1.0"
+
+description: >
+  MirrorMire AMaze Elastic Integration
+
+type: integration
+
+categories:
+  - security
+
+owner:
+  github: Yashaswini-11-ai
+  type: partner

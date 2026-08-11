@@ -1,0 +1,9 @@
+title: Alerts
+
+type: logs
+
+streams:
+  - input: httpjson
+    title: AMaze Alerts
+    description: Collect AMaze alerts and ticket information
+``
