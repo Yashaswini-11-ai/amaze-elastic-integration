@@ -1,11 +1,27 @@
-{
-  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-  "title": "SSH brute force",
-  "status": "OPEN",
-  "threat_score": 97,
-  "src_ip": "185.220.101.34",
-  "dst_ip": "10.0.0.7",
-  "protocol": "ssh",
-  "ttp": "T1110.001",
-  "created_at": "2026-08-05T10:00:00Z"
-}
+[
+  {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "title": "SSH brute force",
+    "status": "OPEN",
+    "threat_score": 97,
+    "src_ip": "185.220.101.34",
+    "dst_ip": "10.0.0.7",
+    "protocol": "ssh",
+    "ttp": "T1110.001",
+    "created_at": "2026-08-05T10:00:00Z"
+  },
+  {
+    "id": "1001",
+    "title": "SSH Brute Force",
+    "status": "OPEN",
+    "src_ip": "185.220.101.34",
+    "threat_score": 97
+  },
+  {
+    "id": "1002",
+    "title": "HTTP Scan",
+    "status": "INVESTIGATING",
+    "src_ip": "45.83.12.5",
+    "threat_score": 76
+  }
+]
