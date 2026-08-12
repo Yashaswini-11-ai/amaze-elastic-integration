@@ -22,3 +22,17 @@
 - Dashboards
 - Visualizations
 - Reporting stream
+# Remaining Work
+
+## Required
+
+- Real bearer token
+- Test AMaze environment
+- API response validation
+- Integration testing
+
+## Future
+
+- Dashboards
+- Visualizations
+- Reporting stream
