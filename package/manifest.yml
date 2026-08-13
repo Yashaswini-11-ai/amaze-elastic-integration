@@ -13,7 +13,19 @@ type: integration
 categories:
   - security
 
+conditions:
+  kibana:
+    version: "^8.0.0"
+
+policy_templates:
+  - name: amaze
+    title: AMaze Integration
+    description: Collect alerts and logs from MirrorMire AMaze
+    inputs:
+      - type: httpjson
+        title: AMaze
+        description: Collect AMaze alerts and logs
+
 owner:
   github: Yashaswini-11-ai
   type: partner
-
