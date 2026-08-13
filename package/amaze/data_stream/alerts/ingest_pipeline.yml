@@ -2,10 +2,20 @@ description: AMaze Alert ECS Transformation Pipeline
 
 processors:
 
+  - set:
+      field: amaze.src_ip
+      copy_from: src_ip
+      ignore_empty_value: true
+
   - rename:
       field: src_ip
       target_field: source.ip
       ignore_missing: true
+
+  - set:
+      field: amaze.dst_ip
+      copy_from: dst_ip
+      ignore_empty_value: true
 
   - rename:
       field: dst_ip
@@ -17,10 +27,20 @@ processors:
       target_field: network.protocol
       ignore_missing: true
 
+  - set:
+      field: amaze.threat_score
+      copy_from: threat_score
+      ignore_empty_value: true
+
   - rename:
       field: threat_score
       target_field: event.severity
       ignore_missing: true
+
+  - set:
+      field: amaze.ttp
+      copy_from: ttp
+      ignore_empty_value: true
 
   - rename:
       field: ttp
@@ -32,10 +52,20 @@ processors:
       target_field: "@timestamp"
       ignore_missing: true
 
+  - set:
+      field: amaze.title
+      copy_from: title
+      ignore_empty_value: true
+
   - rename:
       field: title
       target_field: event.action
       ignore_missing: true
+
+  - set:
+      field: amaze.ticket_status
+      copy_from: status
+      ignore_empty_value: true
 
   - rename:
       field: status

@@ -53,3 +53,11 @@
 - name: amaze.dst_ip
   type: ip
   description: Original destination IP address from the AMaze event
+
+- name: "@timestamp"
+  type: date
+  description: Timestamp when the AMaze event occurred
+
+- name: event.category
+  type: keyword
+  description: ECS event category for the AMaze alert
