@@ -1,0 +1,14 @@
+[
+  {
+    "id": "audit-001",
+    "actor": "analyst@example.com",
+    "action": "ticket.update",
+    "timestamp": "2026-08-05T10:05:00Z"
+  },
+  {
+    "id": "audit-002",
+    "actor": "admin@example.com",
+    "action": "ticket.close",
+    "timestamp": "2026-08-05T10:10:00Z"
+  }
+]

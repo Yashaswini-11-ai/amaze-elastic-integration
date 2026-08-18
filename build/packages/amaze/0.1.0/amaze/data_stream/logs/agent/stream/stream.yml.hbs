@@ -1,0 +1,10 @@
+type: httpjson
+
+interval: {{interval}}
+
+request.url: "{{base_url}}/external_logs"
+
+request.method: GET
+
+request.headers:
+  Authorization: "Bearer {{bearer_token}}"

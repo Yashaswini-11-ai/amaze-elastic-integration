@@ -1,0 +1,13 @@
+type: httpjson
+
+interval: {{interval}}
+
+request.url: "{{base_url}}/tickets"
+
+request.method: GET
+
+request.headers:
+  Authorization: "Bearer {{bearer_token}}"
+
+response.split:
+  target: body
