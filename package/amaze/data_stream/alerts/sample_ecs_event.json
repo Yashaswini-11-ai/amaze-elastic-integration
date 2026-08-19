@@ -1,9 +1,0 @@
-{
-  "event.id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-  "@timestamp": "2026-08-05T10:00:00Z",
-  "source.ip": "185.220.101.34",
-  "destination.ip": "10.0.0.7",
-  "network.protocol": "ssh",
-  "event.severity": 97,
-  "threat.technique.id": "T1110.001"
-}
