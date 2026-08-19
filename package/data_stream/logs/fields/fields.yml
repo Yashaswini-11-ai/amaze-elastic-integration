@@ -18,10 +18,6 @@
   type: keyword
   description: Unique identifier for the log event
 
-- name: event.action
-  type: keyword
-  description: Action associated with the security event
-
 - name: event.category
   type: keyword
   description: ECS event category of the security event

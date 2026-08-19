@@ -61,7 +61,16 @@ processors:
       field: event.type
       value: [connection, info]
   - set:
+      field: event.module
+      value: amaze
+  - set:
+      field: event.dataset
+      value: amaze.logs
+  - set:
       field: event.created
+      value: "{{{_ingest.timestamp}}}"
+  - set:
+      field: event.ingested
       value: "{{{_ingest.timestamp}}}"
 
 on_failure:
